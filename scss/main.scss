@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: #6A9113; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #6A9113 , #141517); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #6A9113 , #141517); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+img {
+   width: 20%;
+   display: inline;
+}
+
+#app-container{
+   font-family: 'Inconsolata', monospace, serif;
+  //  max-width: 960px;
+   #title{
+     color: #eee;
+     margin-top: 50px;
+   }
+   #response{
+     color: #b00;
+     font-size: 128px;
+   }
+   p{
+     color: #6a9113;
+     font-size: 2rem;
+   }
+}
