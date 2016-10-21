@@ -1,9 +1,13 @@
-console.log('fuck you volvo');
+// console.log('fuck you volvo');
 
 var possibleResponses = [
   "nope",
   "absolutely not",
+  "not even close",
   "not yet",
+  "noooooooo",
+  "negatory",
+  "not even remotely",
   "no",
   "nah",
   "no way",
@@ -13,15 +17,15 @@ var possibleResponses = [
   "not at all",
 ]
 
-var button = document.querySelector(".btn")
+var counter = 0
 
-possibleResponsesIterator = function(){
-  for (var i = 0; i < possibleResponses.length; i++) {
-    button.addEventListener("click", function(){
-      document.getElementByID("response").innerHTML = possibleResponses[i]
-    }
+var button = document.querySelector(".btn");
+
+console.log(possibleResponses[counter])
+
+var possibleResponsesIterator = function(){
+  for (var counter = 0; counter < possibleResponses.length; counter++) {
+    document.getElementById("response").innerHTML = possibleResponses[counter];
   }
 }
-// button.addEventListener("click", function(){
-//     document.getElementById("response").innerHTML = possibleResponsesIterator;
-// });
+$('.btn').on('click', possibleResponsesIterator);
